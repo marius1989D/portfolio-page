@@ -16,7 +16,8 @@ document.getElementById('form')
    })
     .then(() => {
       btn.value = 'Send Message';
-      alert('Sent!');
+      alert('Your message is sent!');
+      document.getElementById("form").reset();
     }, (err) => {
       btn.value = 'Send Message';
       alert(JSON.stringify(err));
